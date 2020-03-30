@@ -19,7 +19,7 @@ const LandingPage = () => {
 
     const randomPhoto = photoGallery[Math.floor(Math.random() * photoGallery.length)].src;
 
-    const [photo, setPhoto] = useState(randomPhoto);
+    const photo = useState(randomPhoto)[0];
 
     return <Hero photo={photo}></Hero>;
 };

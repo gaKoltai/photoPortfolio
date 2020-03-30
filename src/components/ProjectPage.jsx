@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import DoubleImageWrapper from "./DoubleImageWrapper";
 import { images } from "../util/photo";
@@ -18,9 +18,10 @@ const StyledProjectPage = styled.div`
 
 const ProjectPage = props => {
     const imgUrls = images.map(image => image.src);
+    const imgCaptions = images.map(image => image.caption);
 
-    const [viewerIsOpen, setViewerIsOpen] = useContext(ViewerStatusContext);
-    const [slide, setSlide] = useContext(SlideNumberContext);
+    const viewerIsOpen = useContext(ViewerStatusContext)[0];
+    const slide = useContext(SlideNumberContext)[0];
 
     return (
         <StyledProjectPage>
@@ -30,7 +31,7 @@ const ProjectPage = props => {
                 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
             </ProjectDesc>
             <DoubleImageWrapper images={[images[2], images[3]]} />
-            <FsLightbox toggler={viewerIsOpen} sources={imgUrls} slide={slide} />
+            <FsLightbox toggler={viewerIsOpen} sources={imgUrls} slide={slide} caption={imgCaptions} />
         </StyledProjectPage>
     );
 };
