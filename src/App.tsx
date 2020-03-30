@@ -10,6 +10,7 @@ import ViewerStatusProvider from "./components/ViewerStatusProvider";
 const StyledContentDivider = styled.div`
     display: flex;
     flex-direction: row;
+    height: 100vh;
 `;
 
 function App() {

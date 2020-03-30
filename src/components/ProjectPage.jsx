@@ -7,13 +7,15 @@ import FsLightbox from "fslightbox-react";
 import { SlideNumberContext } from "./SlideNumberContextProvider";
 import { ViewerStatusContext } from "./ViewerStatusProvider";
 
-const StyledProjectPage = styled.div`
+const StyledProjectPage = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     width: 85vw;
     text-align: center;
+    flex: 1 1 auto;
+    overflow: auto;
 `;
 
 const ProjectPage = props => {
@@ -30,7 +32,7 @@ const ProjectPage = props => {
                 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
             </ProjectDesc>
             <DoubleImageWrapper images={[images[2], images[3]]} />
-            <FsLightbox toggler={viewerIsOpen} sources={imgUrls} slide={slide}/>
+            <FsLightbox toggler={viewerIsOpen} sources={imgUrls} slide={slide} />
         </StyledProjectPage>
     );
 };

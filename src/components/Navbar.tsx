@@ -3,7 +3,7 @@ import styled from "styled-components";
 import NavLink from "./NavLink";
 import NavTitle from "./NavTitle";
 
-const StyledNavBar = styled.div`
+const StyledNavBar = styled.nav`
     width: 15vw;
     height: 100vh;
     display: flex;
@@ -14,6 +14,7 @@ const StyledNavBar = styled.div`
     z-index: 1;
     color: white;
     background: #d0d5d6;
+    flex: 0 0 auto !important;
 `;
 
 interface Props {}
