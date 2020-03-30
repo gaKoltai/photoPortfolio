@@ -17,7 +17,7 @@ export const Hero = styled.div`
 const LandingPage = () => {
     const photoGallery = images;
 
-    const randomPhoto = photoGallery[Math.floor(Math.random() * photoGallery.length)];
+    const randomPhoto = photoGallery[Math.floor(Math.random() * photoGallery.length)].src;
 
     const [photo, setPhoto] = useState(randomPhoto);
 
