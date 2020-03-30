@@ -7,19 +7,13 @@ const StyledNavBar = styled.div`
     width: 15vw;
     height: 100vh;
     display: flex;
-    /*position: fixed;*/
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     padding: 0 2vw;
     z-index: 1;
     color: white;
-    background-color: black;
-
-    h1 {
-        font-size: 2rem;
-        letter-spacing: 0.2rem;
-    }
+    background: #d0d5d6;
 `;
 
 interface Props {}
@@ -28,10 +22,7 @@ const NavBar = (props: Props) => {
     return (
         <StyledNavBar>
             <NavTitle />
-            <NavLink />
-            <NavLink />
-            <NavLink />
-            <NavLink />
+            <NavLink link={"/projects/project1"} />
         </StyledNavBar>
     );
 };

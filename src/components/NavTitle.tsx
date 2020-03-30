@@ -1,15 +1,25 @@
 import React from "react";
 import styled from "styled-components";
+import CustomLink from "./CustomLink";
 
 const StyledNavTitle = styled.h1`
-    margin: 3rem 0;
-    font-family: "Pacifico", cursive;
+    margin: 3rem 0 3rem 0;
+    font-size: 2.3rem;
+    color: white !important;
+
+    &:hover {
+        cursor: pointer;
+    }
 `;
 
 interface Props {}
 
 const NavTitle = (props: Props) => {
-    return <StyledNavTitle>Van Coc</StyledNavTitle>;
+    return (
+        <CustomLink to="/">
+            <StyledNavTitle>Van Coc</StyledNavTitle>
+        </CustomLink>
+    );
 };
 
 export default NavTitle;

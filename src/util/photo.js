@@ -1,45 +1,11 @@
-export const photos = [
-    {
-        src: "https://webneel.com/wallpaper/sites/default/files/images/08-2018/4-nature-wallpaper-sky.jpg"
-    },
-    {
-        src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-        width: 1,
-        height: 1
-    },
-    {
-        src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
-        width: 4,
-        height: 3
-    },
-    {
-        src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-        width: 4,
-        height: 3
-    },
-    {
-        src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-        width: 4,
-        height: 3
-    }
+import Img1 from "./img/austria-color-daylight-environment-417222.jpg";
+import Img2 from "./img/abstract-architecture-black-and-white-boardwalk-262367.jpg";
+import Img3 from "./img/alone-autumn-branch-cold-259670.jpg";
+import Img4 from "./img/flowering-plant-775995.jpg";
+
+export const images = [
+    { src: Img1, id: 0 },
+    { src: Img2, id: 1 },
+    { src: Img3, id: 2 },
+    { src: Img4, id: 3 }
 ];

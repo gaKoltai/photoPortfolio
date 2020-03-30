@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { photos } from "../util/photo";
+import { images } from "../util/photo";
 
 export const Hero = styled.div`
     height: 100vh;
     width: 85vw;
     background-image: url(${props => props.photo});
-    background-size: cover;
+    background-size: 85vw 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,11 +15,11 @@ export const Hero = styled.div`
 `;
 
 const LandingPage = () => {
-    const photoGallery = photos;
+    const photoGallery = images;
 
-    const randomPhoto = Math.floor(Math.random() * photoGallery.length);
+    const randomPhoto = photoGallery[Math.floor(Math.random() * photoGallery.length)];
 
-    const [photo, setPhoto] = useState(photoGallery[randomPhoto].src);
+    const [photo, setPhoto] = useState(randomPhoto);
 
     return <Hero photo={photo}></Hero>;
 };

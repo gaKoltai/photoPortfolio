@@ -1,23 +1,30 @@
 import React from "react";
 import styled from "styled-components";
+import CustomLink from "./CustomLink";
 
-const StyledNavLink = styled.a`
-    padding: 1.5rem 3rem;
-    font-size: 1.2rem;
-    margin: 1.5rem 0;
+const StyledNavLink = styled.p`
+    font-size: 1rem;
+    margin: 1rem 0rem;
     border-style: none;
     border-radius: 10px;
+    color: white !important;
 
     &:hover {
-        background-color: gray;
         cursor: pointer;
+        text-decoration: underline;
     }
 `;
 
-interface Props {}
+interface Props {
+    link: string;
+}
 
 const NavLink = (props: Props) => {
-    return <StyledNavLink>Link</StyledNavLink>;
+    return (
+        <CustomLink to={props.link}>
+            <StyledNavLink>Very long link title</StyledNavLink>
+        </CustomLink>
+    );
 };
 
 export default NavLink;
