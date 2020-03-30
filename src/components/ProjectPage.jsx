@@ -18,7 +18,6 @@ const StyledProjectPage = styled.div`
 
 const ProjectPage = props => {
     const imgUrls = images.map(image => image.src);
-    const imgCaptions = images.map(image => image.caption);
 
     const viewerIsOpen = useContext(ViewerStatusContext)[0];
     const slide = useContext(SlideNumberContext)[0];
@@ -31,7 +30,7 @@ const ProjectPage = props => {
                 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
             </ProjectDesc>
             <DoubleImageWrapper images={[images[2], images[3]]} />
-            <FsLightbox toggler={viewerIsOpen} sources={imgUrls} slide={slide} caption={imgCaptions} />
+            <FsLightbox toggler={viewerIsOpen} sources={imgUrls} slide={slide}/>
         </StyledProjectPage>
     );
 };
