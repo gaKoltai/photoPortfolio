@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import DoubleImageWrapper from "./DoubleImageWrapper";
-import { images } from "../util/photo";
+import { images } from "../../static/photo";
 import ProjectDesc from "./ProjectDesc";
 import FsLightbox from "fslightbox-react";
-import { SlideNumberContext } from "./SlideNumberContextProvider";
-import { ViewerStatusContext } from "./ViewerStatusProvider";
+import { SlideNumberContext } from "../context-providers/SlideNumberContextProvider";
+import { ViewerStatusContext } from "../context-providers/ViewerStatusProvider";
+import Photo from "./Photo";
 
 const StyledProjectPage = styled.section`
     display: flex;
@@ -15,6 +16,7 @@ const StyledProjectPage = styled.section`
     width: 85vw;
     text-align: center;
     flex: 1 1 auto;
+    overflow-x: hidden;
     overflow: auto;
 `;
 
@@ -26,11 +28,14 @@ const ProjectPage = props => {
 
     return (
         <StyledProjectPage>
-            <DoubleImageWrapper images={[images[0], images[1]]} />
+            <Photo img={images[0]} large />
 
             <ProjectDesc>
                 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
             </ProjectDesc>
+            <DoubleImageWrapper images={[images[2], images[3]]} />
+            <DoubleImageWrapper images={[images[2], images[3]]} />
+            <DoubleImageWrapper images={[images[2], images[3]]} />
             <DoubleImageWrapper images={[images[2], images[3]]} />
             <FsLightbox toggler={viewerIsOpen} sources={imgUrls} slide={slide} />
         </StyledProjectPage>

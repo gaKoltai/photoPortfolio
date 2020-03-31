@@ -1,11 +1,11 @@
 import React from "react";
-import LandingPage from "./components/LandingPage";
-import NavBar from "./components/Navbar";
+import LandingPage from "./components/main-site/LandingPage";
+import NavBar from "./components/navigation/Navbar";
 import styled from "styled-components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ProjectPage from "./components/ProjectPage";
-import SlideNumberContextProvider from "./components/SlideNumberContextProvider";
-import ViewerStatusProvider from "./components/ViewerStatusProvider";
+import ProjectPage from "./components/portfolio/ProjectPage";
+import SlideNumberContextProvider from "./components/context-providers/SlideNumberContextProvider";
+import ViewerStatusProvider from "./components/context-providers/ViewerStatusProvider";
 
 const StyledContentDivider = styled.div`
     display: flex;

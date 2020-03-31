@@ -6,6 +6,7 @@ const StyledNavTitle = styled.h1`
     margin: 3rem 0 3rem 0;
     font-size: 2.3rem;
     color: white !important;
+    letter-spacing: 0.1rem;
 
     &:hover {
         cursor: pointer;

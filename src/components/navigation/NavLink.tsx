@@ -4,7 +4,9 @@ import CustomLink from "./CustomLink";
 
 const StyledNavLink = styled.p`
     font-size: 1rem;
-    margin: 1rem 0rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    margin: 2rem 0rem;
     border-style: none;
     border-radius: 10px;
     color: white !important;
@@ -17,12 +19,13 @@ const StyledNavLink = styled.p`
 
 interface Props {
     link: string;
+    children: string;
 }
 
 const NavLink = (props: Props) => {
     return (
         <CustomLink to={props.link}>
-            <StyledNavLink>Very long link title</StyledNavLink>
+            <StyledNavLink>{props.children}</StyledNavLink>
         </CustomLink>
     );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { images } from "../util/photo";
+import { images } from "../../static/photo";
 
 export const Hero = styled.div`
     height: 100vh;
