@@ -8,10 +8,10 @@ interface ImageProps {
 }
 
 const StyledImage = styled.img`
-    width: ${(props: ImageProps) => (props.large ? "80rem" : "40rem")};
-    height: ${(props: ImageProps) => (props.large ? "43rem" : "25.5rem")};
+    width: ${(props: ImageProps) => (props.large ? "75rem" : "35rem")};
+    height: ${(props: ImageProps) => (props.large ? "50rem" : "25.5rem")};
     flex-grow: ${(props: ImageProps) => (props.large ? "1" : "0")};
-    padding: 1.5rem;
+    padding: 0.5rem;
 
     &:hover {
         cursor: pointer;
@@ -33,7 +33,7 @@ const Photo = (props: Props) => {
             large={props.large}
             src={props.img.src}
             onClick={() => {
-                setSlide(props.img.id + 1);
+                setSlide(props.img.id);
                 setViewerIsOpen(!viewerIsOpen);
             }}
         ></StyledImage>

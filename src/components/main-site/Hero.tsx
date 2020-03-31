@@ -6,7 +6,7 @@ interface HeroProps {
 }
 
 const StyledHero = styled.section`
-    height: 100vh;
+    height: 95vh;
     width: 80vw;
     background-image: url(${(props: HeroProps) => props.photo});
     background-size: 80vw 95vh;

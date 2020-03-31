@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { images } from "../../static/photo";
+import imageLoader from "../../static/photo";
 import Hero from "./Hero";
 
 interface HeroProps {
     photo?: string;
 }
 
-export const StyledLandingPage = styled.div`
+export const StyledLandingPage = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@ export const StyledLandingPage = styled.div`
 `;
 
 const LandingPage = () => {
-    const photoGallery = images;
+    const photoGallery = imageLoader();
 
     const randomPhoto = photoGallery[Math.floor(Math.random() * photoGallery.length)].src;
 

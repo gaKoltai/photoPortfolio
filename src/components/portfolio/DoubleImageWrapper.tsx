@@ -12,8 +12,6 @@ interface Props {
 }
 
 const DoubleImageWrapper = (props: Props) => {
-    console.log(props.images[0].src);
-
     return (
         <StyledDoubleImageWrapper>
             {props.images.map(img => (
