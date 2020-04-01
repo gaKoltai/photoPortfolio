@@ -7,20 +7,12 @@ const StyledNavTitle = styled.h1`
     font-size: 2.3rem;
     color: white !important;
     letter-spacing: 0.1rem;
-
-    &:hover {
-        cursor: pointer;
-    }
 `;
 
 interface Props {}
 
 const NavTitle = (props: Props) => {
-    return (
-        <CustomLink to="/">
-            <StyledNavTitle>Van Coc</StyledNavTitle>
-        </CustomLink>
-    );
+    return <StyledNavTitle>Van Coc</StyledNavTitle>;
 };
 
 export default NavTitle;

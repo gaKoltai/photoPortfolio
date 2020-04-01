@@ -15,6 +15,7 @@ const StyledProjectPage = styled.section`
     justify-content: flex-start;
     width: 85vw;
     text-align: center;
+    margin-left: 20vw;
     flex: 1 1 auto;
     overflow: auto;
     background-color: #d5d4d8;

@@ -1,8 +1,8 @@
-import React from "react";
+import React, { MutableRefObject } from "react";
 import styled from "styled-components";
-import CustomLink from "./CustomLink";
+import { Link } from "react-scroll";
 
-const StyledNavLink = styled.p`
+export const StyledNavLink = styled.p`
     font-size: 1rem;
     letter-spacing: 0.1rem;
     font-weight: bold;
@@ -17,16 +17,22 @@ const StyledNavLink = styled.p`
     }
 `;
 
+const StyledScrollLink = styled(Link)`
+    &.active {
+        text-decoration: underline;
+    }
+`;
+
 interface Props {
-    link: string;
     children: string;
+    link: string;
 }
 
 const NavLink = (props: Props) => {
     return (
-        <CustomLink to={props.link}>
+        <StyledScrollLink activeClass="active" to={props.link} spy={true} smooth={true} offset={-140} duration={500}>
             <StyledNavLink>{props.children}</StyledNavLink>
-        </CustomLink>
+        </StyledScrollLink>
     );
 };
 

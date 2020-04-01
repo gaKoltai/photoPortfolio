@@ -36,7 +36,7 @@ const Photo = (props: Props) => {
                 setSlide(props.img.id);
                 setViewerIsOpen(!viewerIsOpen);
             }}
-        ></StyledImage>
+        />
     );
 };
 

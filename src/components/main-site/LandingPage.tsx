@@ -1,33 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useContext } from "react";
 import styled from "styled-components";
 import imageLoader from "../../static/photo";
 import Hero from "./Hero";
+import Photo from "../portfolio/Photo";
+import CoverPhoto from "./CoverPhoto";
+import SectionTitle from "./SectionTitle";
+import { ScrollRefContext } from "../context-providers/ScrollRefContextProvider";
+import { Link } from "react-scroll";
 
 interface HeroProps {
     photo?: string;
 }
 
 export const StyledLandingPage = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 85vw;
+    display: block;
+    width: 80vw;
     text-align: center;
-    flex: 1 1 auto;
-    overflow: auto;
+    margin-left: 20vw;
 `;
 
 const LandingPage = () => {
     const photoGallery = imageLoader();
 
-    const randomPhoto = photoGallery[Math.floor(Math.random() * photoGallery.length)].src;
-
-    const photo = useState(randomPhoto)[0];
+    const randomPhoto: { id: number; src: string } = photoGallery[Math.floor(Math.random() * photoGallery.length)];
 
     return (
         <StyledLandingPage>
-            <Hero photo={photo}></Hero>
+            <CoverPhoto id={"home"} photo={randomPhoto} />
+            <Hero id={"portfolio"}>
+                <SectionTitle>Portfolio</SectionTitle>
+            </Hero>
         </StyledLandingPage>
     );
 };

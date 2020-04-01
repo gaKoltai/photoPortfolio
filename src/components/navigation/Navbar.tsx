@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import NavLink from "./NavLink";
+import NavLink, { StyledNavLink } from "./NavLink";
 import NavTitle from "./NavTitle";
 import NavlinkWrapper from "./NavlinkWrapper";
+import CustomLink from "./CustomLink";
 
 const StyledNavBar = styled.nav`
     width: 20vw;
     height: 100vh;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,9 +27,15 @@ const NavBar = (props: Props) => {
         <StyledNavBar>
             <NavlinkWrapper>
                 <NavTitle />
-                <NavLink link={"/"}>Home</NavLink>
-                <NavLink link={"/projects/project1"}>Portfolio</NavLink>
-                <NavLink link={"/projects/project1"}>About Me</NavLink>
+                {window.location.pathname === "/" ? (
+                    <NavLink link="home">Home</NavLink>
+                ) : (
+                    <CustomLink to={"/"}>
+                        <StyledNavLink>Home</StyledNavLink>
+                    </CustomLink>
+                )}
+
+                <NavLink link="portfolio">Portfolio</NavLink>
             </NavlinkWrapper>
         </StyledNavBar>
     );
