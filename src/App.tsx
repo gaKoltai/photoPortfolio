@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProjectPage from "./components/portfolio/ProjectPage";
 import SlideNumberContextProvider from "./components/context-providers/SlideNumberContextProvider";
 import ViewerStatusProvider from "./components/context-providers/ViewerStatusProvider";
-import imageLoader, { getDescription } from "./static/util/baltazarImgLoader";
 import NavigationContextProvider from "./components/context-providers/NavigationContextProvider";
 
 function App() {
@@ -19,8 +18,9 @@ function App() {
                         <SlideNumberContextProvider>
                             <Route
                                 path="/portfolio/baltazár"
-                                render={props => <ProjectPage images={imageLoader()} description={getDescription()} />}
+                                render={props => <ProjectPage projectTitle={"baltazár"} />}
                             />
+                            <Route path="/portfolio/entrée" render={props => <ProjectPage projectTitle={"entrée"} />} />
                         </SlideNumberContextProvider>
                     </ViewerStatusProvider>
                 </Switch>
