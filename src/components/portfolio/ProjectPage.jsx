@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
 import DoubleImageWrapper from "./DoubleImageWrapper";
 import imageLoader from "../../static/photo";
@@ -7,15 +7,16 @@ import FsLightbox from "fslightbox-react";
 import { SlideNumberContext } from "../context-providers/SlideNumberContextProvider";
 import { ViewerStatusContext } from "../context-providers/ViewerStatusProvider";
 import Photo from "./Photo";
+import { animateScroll as scroll } from "react-scroll";
 
 const StyledProjectPage = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 85vw;
+    width: 80%;
     text-align: center;
-    margin-left: 20vw;
+    margin-left: 20%;
     flex: 1 1 auto;
     overflow: auto;
     background-color: #d5d4d8;
@@ -28,6 +29,14 @@ const ProjectPage = props => {
 
     const viewerIsOpen = useContext(ViewerStatusContext)[0];
     const slide = useContext(SlideNumberContext)[0];
+
+    useEffect(() => {
+        scrollToTop();
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
 
     return (
         <StyledProjectPage>

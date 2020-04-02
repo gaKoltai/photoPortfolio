@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledCoverPhoto = styled.img`
-    width: 96rem;
+    width: 100%;
     height: 95vh;
+    background-color: #d5d4d8;
 `;
 
 interface Props {

@@ -6,8 +6,8 @@ import NavlinkWrapper from "./NavlinkWrapper";
 import CustomLink from "./CustomLink";
 
 const StyledNavBar = styled.nav`
-    width: 20vw;
-    height: 100vh;
+    width: 20%;
+    height: 100%;
     position: fixed;
     display: flex;
     justify-content: space-between;

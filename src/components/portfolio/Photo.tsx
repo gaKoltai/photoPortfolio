@@ -8,11 +8,10 @@ interface ImageProps {
 }
 
 const StyledImage = styled.img`
-    width: ${(props: ImageProps) => (props.large ? "75rem" : "38rem")};
-    height: ${(props: ImageProps) => (props.large ? "50rem" : "25.5rem")};
+    width: ${(props: ImageProps) => (props.large ? "81rem" : "40rem")};
+    height: ${(props: ImageProps) => (props.large ? "50rem" : "26.5rem")};
     flex-grow: ${(props: ImageProps) => (props.large ? "1" : "0")};
-    margin: 0.5rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    margin: 1.5rem 0.5rem 1.5rem 0.5rem;
 
     &:hover {
         cursor: pointer;

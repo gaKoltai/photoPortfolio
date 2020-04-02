@@ -7,6 +7,8 @@ import CoverPhoto from "./CoverPhoto";
 import SectionTitle from "./SectionTitle";
 import { ScrollRefContext } from "../context-providers/ScrollRefContextProvider";
 import { Link } from "react-scroll";
+import ImageCard from "./PortfolioCard";
+import CardImage from "./CardImage";
 
 interface HeroProps {
     photo?: string;
@@ -14,9 +16,9 @@ interface HeroProps {
 
 export const StyledLandingPage = styled.section`
     display: block;
-    width: 80vw;
+    width: 80%;
     text-align: center;
-    margin-left: 20vw;
+    margin-left: 20%;
 `;
 
 const LandingPage = () => {
@@ -29,6 +31,9 @@ const LandingPage = () => {
             <CoverPhoto id={"home"} photo={randomPhoto} />
             <Hero id={"portfolio"}>
                 <SectionTitle>Portfolio</SectionTitle>
+                <ImageCard title={"Baltazár Színtársulat"} link={"/portfolio/baltazár"}>
+                    <CardImage src={photoGallery[0].src} />
+                </ImageCard>
             </Hero>
         </StyledLandingPage>
     );
