@@ -1,12 +1,14 @@
 import React, { useState, useRef, useContext } from "react";
 import styled from "styled-components";
-import imageLoader from "../../static/photo";
+import imageLoader from "../../static/util/baltazarImgLoader";
 import Hero from "./Hero";
 import Photo from "../portfolio/Photo";
 import CoverPhoto from "./CoverPhoto";
 import SectionTitle from "./SectionTitle";
 import { ScrollRefContext } from "../context-providers/ScrollRefContextProvider";
 import { Link } from "react-scroll";
+import ImageCard from "./PortfolioCard";
+import CardImage from "./CardImage";
 
 interface HeroProps {
     photo?: string;
@@ -14,9 +16,9 @@ interface HeroProps {
 
 export const StyledLandingPage = styled.section`
     display: block;
-    width: 80vw;
+    width: 85%;
     text-align: center;
-    margin-left: 20vw;
+    margin-left: 15%;
 `;
 
 const LandingPage = () => {
@@ -29,6 +31,9 @@ const LandingPage = () => {
             <CoverPhoto id={"home"} photo={randomPhoto} />
             <Hero id={"portfolio"}>
                 <SectionTitle>Portfolio</SectionTitle>
+                <ImageCard title={"Baltazár Színház"} link={"/portfolio/baltazár"}>
+                    <CardImage src={photoGallery[0].src} />
+                </ImageCard>
             </Hero>
         </StyledLandingPage>
     );

@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 const StyledHero = styled.div`
     height: 85vh;
-    width: 80vw;
+    width: 100%;
     background-color: #d5d4d8;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 `;
 

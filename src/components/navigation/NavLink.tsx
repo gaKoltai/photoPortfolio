@@ -17,11 +17,7 @@ export const StyledNavLink = styled.p`
     }
 `;
 
-const StyledScrollLink = styled(Link)`
-    &.active {
-        text-decoration: underline;
-    }
-`;
+const StyledScrollLink = styled(Link)``;
 
 interface Props {
     children: string;

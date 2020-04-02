@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProjectPage from "./components/portfolio/ProjectPage";
 import SlideNumberContextProvider from "./components/context-providers/SlideNumberContextProvider";
 import ViewerStatusProvider from "./components/context-providers/ViewerStatusProvider";
+import imageLoader, { getDescription } from "./static/util/baltazarImgLoader";
 
 function App() {
     return (
@@ -14,7 +15,10 @@ function App() {
                 <Route path="/" exact component={LandingPage} />
                 <ViewerStatusProvider>
                     <SlideNumberContextProvider>
-                        <Route path="/portfolio/baltazár" exact component={ProjectPage} />
+                        <Route
+                            path="/portfolio/baltazár"
+                            render={props => <ProjectPage images={imageLoader()} description={getDescription()} />}
+                        />
                     </SlideNumberContextProvider>
                 </ViewerStatusProvider>
             </Switch>
