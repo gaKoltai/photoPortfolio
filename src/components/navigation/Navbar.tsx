@@ -4,9 +4,11 @@ import NavLink, { StyledNavLink } from "./NavLink";
 import NavTitle from "./NavTitle";
 import NavlinkWrapper from "./NavlinkWrapper";
 import CustomLink from "./CustomLink";
+import { useLocation, useHistory } from "react-router-dom";
+import NavLinkWithScrollAndRedirect from "./NavLinkWithScrollAndRedirect";
 
 const StyledNavBar = styled.nav`
-    width: 20%;
+    width: 15%;
     height: 100%;
     position: fixed;
     display: flex;
@@ -23,19 +25,19 @@ const StyledNavBar = styled.nav`
 interface Props {}
 
 const NavBar = (props: Props) => {
+    const location = useLocation();
+
     return (
         <StyledNavBar>
             <NavlinkWrapper>
                 <NavTitle />
-                {window.location.pathname === "/" ? (
-                    <NavLink link="home">Home</NavLink>
-                ) : (
-                    <CustomLink to={"/"}>
-                        <StyledNavLink>Home</StyledNavLink>
-                    </CustomLink>
-                )}
+                <NavLinkWithScrollAndRedirect scroll={"home"} link={"/"}>
+                    Home
+                </NavLinkWithScrollAndRedirect>
 
-                <NavLink link="portfolio">Portfolio</NavLink>
+                <NavLinkWithScrollAndRedirect scroll={"portfolio"} link={"/"}>
+                    Portfolio
+                </NavLinkWithScrollAndRedirect>
             </NavlinkWrapper>
         </StyledNavBar>
     );
