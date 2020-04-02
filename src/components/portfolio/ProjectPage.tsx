@@ -6,6 +6,7 @@ import FsLightbox from "fslightbox-react";
 import { SlideNumberContext } from "../context-providers/SlideNumberContextProvider";
 import { ViewerStatusContext } from "../context-providers/ViewerStatusProvider";
 import Photo from "./Photo";
+import { imageLoader } from "../../static/util/util";
 
 const StyledProjectPage = styled.section`
     display: flex;
@@ -21,12 +22,13 @@ const StyledProjectPage = styled.section`
 `;
 
 interface Props {
-    images: { id: number; src: string }[];
-    description: string;
+    projectTitle: string;
 }
 
 const ProjectPage = (props: Props) => {
-    const imgUrls = props.images.map(image => image.src);
+    const projectData = imageLoader(props.projectTitle);
+
+    const imgUrls = projectData.img.map(image => image.src);
 
     const [viewerIsOpen, setViewerIsOpen] = useContext(ViewerStatusContext);
     const [slide, setSlide] = useContext(SlideNumberContext);
@@ -41,9 +43,9 @@ const ProjectPage = (props: Props) => {
 
     return (
         <StyledProjectPage>
-            <Photo img={props.images[0]} large />
-            <ProjectDesc>{props.description}</ProjectDesc>
-            <ImagesContainer images={props.images} />
+            <Photo img={projectData.img[0]} large />
+            <ProjectDesc>{projectData.desc}</ProjectDesc>
+            <ImagesContainer images={projectData.img} />
             <FsLightbox toggler={viewerIsOpen} sources={imgUrls} slide={slide} />
         </StyledProjectPage>
     );
