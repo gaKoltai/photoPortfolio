@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import CustomLink from "./CustomLink";
 
 const StyledNavTitle = styled.h1`
     margin: 3rem 0 3rem 0;
