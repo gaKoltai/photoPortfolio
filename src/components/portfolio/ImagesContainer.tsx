@@ -20,7 +20,7 @@ const ImagesContainer = (props: Props) => {
     return (
         <StyledImagesContainer>
             {props.images.map(img => {
-                return img != props.images[0] && <Photo key={img.id} img={img} />;
+                return img !== props.images[0] && <Photo key={img.id} img={img} />;
             })}
         </StyledImagesContainer>
     );
