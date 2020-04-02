@@ -11,7 +11,8 @@ const StyledImage = styled.img`
     width: ${(props: ImageProps) => (props.large ? "75rem" : "38rem")};
     height: ${(props: ImageProps) => (props.large ? "50rem" : "25.5rem")};
     flex-grow: ${(props: ImageProps) => (props.large ? "1" : "0")};
-    padding: 0.5rem;
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 
     &:hover {
         cursor: pointer;
