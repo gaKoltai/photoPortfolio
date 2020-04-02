@@ -16,7 +16,7 @@ import Img15 from "../img/baltazar/015_DSC5237.jpg";
 import Img16 from "../img/baltazar/016_DSC7531-2.jpg";
 import Img17 from "../img/baltazar/017_DSC5689.jpg";
 
-const images = [
+export const baltazarImages = [
     { id: 1, src: Img1 },
     { id: 2, src: Img2 },
     { id: 3, src: Img3 },
@@ -36,12 +36,5 @@ const images = [
     { id: 17, src: Img17 }
 ];
 
-export function getDescription() {
-    return "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...";
-}
-
-function imageLoader() {
-    return images;
-}
-
-export default imageLoader;
+export const baltDesc =
+    "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...";
