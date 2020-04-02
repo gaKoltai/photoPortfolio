@@ -3,8 +3,7 @@ import styled from "styled-components";
 
 const StyledCoverPhoto = styled.img`
     width: 100%;
-    height: 95vh;
-    background-color: #d5d4d8;
+    height: 100vh;
 `;
 
 interface Props {
