@@ -1,6 +1,6 @@
 import React, { useState, useRef, useContext } from "react";
 import styled from "styled-components";
-import imageLoader from "../../static/photo";
+import imageLoader from "../../static/util/baltazarImgLoader";
 import Hero from "./Hero";
 import Photo from "../portfolio/Photo";
 import CoverPhoto from "./CoverPhoto";
@@ -16,9 +16,9 @@ interface HeroProps {
 
 export const StyledLandingPage = styled.section`
     display: block;
-    width: 80%;
+    width: 85%;
     text-align: center;
-    margin-left: 20%;
+    margin-left: 15%;
 `;
 
 const LandingPage = () => {
@@ -31,7 +31,7 @@ const LandingPage = () => {
             <CoverPhoto id={"home"} photo={randomPhoto} />
             <Hero id={"portfolio"}>
                 <SectionTitle>Portfolio</SectionTitle>
-                <ImageCard title={"Baltazár Színtársulat"} link={"/portfolio/baltazár"}>
+                <ImageCard title={"Baltazár Színház"} link={"/portfolio/baltazár"}>
                     <CardImage src={photoGallery[0].src} />
                 </ImageCard>
             </Hero>
