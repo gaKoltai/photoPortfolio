@@ -7,7 +7,7 @@ const StyledHero = styled.div`
     background-color: #d5d4d8;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 `;
 
