@@ -9,7 +9,7 @@ interface ImageProps {
 
 const StyledImage = styled.img`
     width: ${(props: ImageProps) => (props.large ? "81rem" : "40rem")};
-    height: ${(props: ImageProps) => (props.large ? "50rem" : "26.5rem")};
+    height: auto;
     flex-grow: ${(props: ImageProps) => (props.large ? "1" : "0")};
     margin: 1.5rem 0.5rem 1.5rem 0.5rem;
 
