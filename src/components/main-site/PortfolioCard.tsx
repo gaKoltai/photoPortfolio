@@ -17,12 +17,12 @@ interface Props {
 
 const PortfolioCard = (props: Props) => {
     return (
-        <CustomLink to={props.link}>
-            <StyledCardContainer>
+        <StyledCardContainer>
+            <CustomLink to={props.link}>
                 {props.children}
                 <CardTitle title={props.title}></CardTitle>
-            </StyledCardContainer>
-        </CustomLink>
+            </CustomLink>
+        </StyledCardContainer>
     );
 };
 
