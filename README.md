@@ -17,6 +17,7 @@
 
 ### In order to run the website:
 
+- Check the deployed site version [here](https://gakoltai.github.io/photoPortfolio/#/)
 - Install dependencies : run `npm install` from project root.
 - Run the development server with: `npm start`
 
