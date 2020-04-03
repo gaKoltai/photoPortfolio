@@ -15,6 +15,10 @@ export const StyledNavLink = styled.p`
         cursor: pointer;
         text-decoration: underline;
     }
+
+    &.active {
+        text-decoration: underline;
+    }
 `;
 
 const StyledScrollLink = styled(Link)``;
@@ -26,7 +30,7 @@ interface Props {
 
 const NavLink = (props: Props) => {
     return (
-        <StyledScrollLink activeClass="active" to={props.link} spy={true} smooth={true} offset={-140} duration={500}>
+        <StyledScrollLink activeClass="active" to={props.link} spy={true} smooth={true} offset={0} duration={500}>
             <StyledNavLink>{props.children}</StyledNavLink>
         </StyledScrollLink>
     );
