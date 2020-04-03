@@ -27,8 +27,8 @@ const Footer = (props: Props) => {
         <StyledFooter>
             <ul>
                 <FooterItem first>© Untitled. All rights reserved</FooterItem>
-                <FooterItem>Random text</FooterItem>
-                <FooterItem>Random text</FooterItem>
+                <FooterItem>More random footer text</FooterItem>
+                <FooterItem>More random footer text</FooterItem>
             </ul>
         </StyledFooter>
     );
