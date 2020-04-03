@@ -1,3 +1,37 @@
+## Photography portfolio site
+
+### Goals of the site:
+
+- Display photography work of the site owner in simple and easy to navigate matter.
+- Showcase various front-end tech (smooth-scrolling, styled components etc, lightbox display.)
+
+### Motivations for building this project:
+
+- Further improve at building project using various frontend technologies and libraries (React, TypeScript, CSS, styled-components) as this was my very first attempt at using any of these in a project.
+- Build a "real world" project for a real product owner to learn to comform to the requirements of others and practice compromise.
+
+
+### In order to run the website:
+
+- Install dependencies : run `npm install` from project root.
+- Run the development server with: `npm start`
+
+
+### Important :
+
+- THis is still a work in progress, latest working version can be found on the development branch.
+- All pictures featured on the site are the property of the photographer.
+
+
+### Technologies used:
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled components](https://styled-components.com/)
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
