@@ -33,6 +33,9 @@ const NavBar = (props: Props) => {
                 <NavLinkWithScrollAndRedirect scroll={"portfolio"} link={"/"}>
                     Portfolio
                 </NavLinkWithScrollAndRedirect>
+                <NavLinkWithScrollAndRedirect scroll={"about"} link={"/"}>
+                    About me
+                </NavLinkWithScrollAndRedirect>
             </NavlinkWrapper>
         </StyledNavBar>
     );
