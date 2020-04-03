@@ -6,7 +6,7 @@ interface StyleProps {
 }
 
 const StyledFooterItem = styled.li`
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 1rem;
     border-left: ${(props: StyleProps) => (props.first ? "" : "0.001rem solid #393a42")};
     text-decoration: none;
     list-style: none;
