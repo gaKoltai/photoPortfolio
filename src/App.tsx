@@ -6,6 +6,7 @@ import ProjectPage from "./components/portfolio/ProjectPage";
 import SlideNumberContextProvider from "./components/context-providers/SlideNumberContextProvider";
 import ViewerStatusProvider from "./components/context-providers/ViewerStatusProvider";
 import NavigationContextProvider from "./components/context-providers/NavigationContextProvider";
+import Footer from "./components/footer/Footer";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                     </ViewerStatusProvider>
                 </Switch>
             </NavigationContextProvider>
+            <Footer />
         </Router>
     );
 }

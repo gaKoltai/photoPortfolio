@@ -31,7 +31,7 @@ const LandingPage = () => {
 
     useEffect(() => {
         scroller.scrollTo(link, {
-            duration: 800,
+            duration: 400,
             delay: 0,
             smooth: "easeInOutQuart"
         });
