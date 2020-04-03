@@ -12,7 +12,7 @@ const StyledHero = styled.div`
     background-color: ${(props: StyleProps) => (props.dark ? "#d5d4d8" : "#D8D7DB")};
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
 `;
 
