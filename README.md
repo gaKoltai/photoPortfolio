@@ -19,7 +19,8 @@
 
 ### Important :
 
-- THis is still a work in progress, latest working version can be found on the development branch.
+- This is still a work in progress, latest working version can be found on the development branch.
+- Site is not responsive yet  - once design is agreeed upon and finished will be made responsive.
 - All pictures featured on the site are the property of the photographer.
 
 
