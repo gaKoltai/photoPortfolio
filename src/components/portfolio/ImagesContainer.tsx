@@ -10,6 +10,7 @@ const StyledImagesContainer = styled.div`
     text-align: center;
     justify-content: center;
     width: 85%;
+    margin-bottom: 2rem;
 `;
 
 interface Props {
