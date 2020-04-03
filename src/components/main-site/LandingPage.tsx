@@ -9,6 +9,7 @@ import CardImage from "./CardImage";
 import { NavigationContext } from "../context-providers/NavigationContextProvider";
 import { imageLoader } from "../../static/util/util";
 import PortfolioCardsWrapper from "./PortfolioCardsWrapper";
+import About from "./About";
 
 interface HeroProps {
     photo?: string;
@@ -19,6 +20,7 @@ export const StyledLandingPage = styled.section`
     width: 85%;
     text-align: center;
     margin-left: 15%;
+    color: #393a42;
 `;
 
 const LandingPage = () => {
@@ -40,7 +42,7 @@ const LandingPage = () => {
     return (
         <StyledLandingPage>
             <CoverPhoto id={"home"} photo={randomPhoto} />
-            <Hero id={"portfolio"}>
+            <Hero large dark id={"portfolio"}>
                 <SectionTitle>Portfolio</SectionTitle>
                 <PortfolioCardsWrapper>
                     <ImageCard title={"Baltazár Színház"} link={"/portfolio/baltazár"}>
@@ -50,6 +52,10 @@ const LandingPage = () => {
                         <CardImage src={photoGallery.img[1].src} />
                     </ImageCard>
                 </PortfolioCardsWrapper>
+            </Hero>
+            <Hero id={"about"} large>
+                <SectionTitle>About me</SectionTitle>
+                <About />
             </Hero>
         </StyledLandingPage>
     );
