@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cbed40b19cc18ffc2939900f8f7001db",
+    "revision": "75585d24d579a1ada8920c827178df9e",
     "url": "/gaKoltai/photoPortfolio/index.html"
   },
   {
-    "revision": "1a410658067494098c8d",
+    "revision": "f37727a817bf325c474e",
     "url": "/gaKoltai/photoPortfolio/static/css/main.2fd7e077.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gaKoltai/photoPortfolio/static/js/2.b2619122.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1a410658067494098c8d",
-    "url": "/gaKoltai/photoPortfolio/static/js/main.85de25e1.chunk.js"
+    "revision": "f37727a817bf325c474e",
+    "url": "/gaKoltai/photoPortfolio/static/js/main.ee9e9745.chunk.js"
   },
   {
     "revision": "79ee9044da1a2e35f47a",

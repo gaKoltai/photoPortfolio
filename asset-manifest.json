@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gaKoltai/photoPortfolio/static/css/main.2fd7e077.chunk.css",
-    "main.js": "/gaKoltai/photoPortfolio/static/js/main.85de25e1.chunk.js",
-    "main.js.map": "/gaKoltai/photoPortfolio/static/js/main.85de25e1.chunk.js.map",
+    "main.js": "/gaKoltai/photoPortfolio/static/js/main.ee9e9745.chunk.js",
+    "main.js.map": "/gaKoltai/photoPortfolio/static/js/main.ee9e9745.chunk.js.map",
     "runtime-main.js": "/gaKoltai/photoPortfolio/static/js/runtime-main.2ca1de94.js",
     "runtime-main.js.map": "/gaKoltai/photoPortfolio/static/js/runtime-main.2ca1de94.js.map",
     "static/js/2.b2619122.chunk.js": "/gaKoltai/photoPortfolio/static/js/2.b2619122.chunk.js",
     "static/js/2.b2619122.chunk.js.map": "/gaKoltai/photoPortfolio/static/js/2.b2619122.chunk.js.map",
     "index.html": "/gaKoltai/photoPortfolio/index.html",
-    "precache-manifest.580e16de507a9abc661d7eda571d3cf9.js": "/gaKoltai/photoPortfolio/precache-manifest.580e16de507a9abc661d7eda571d3cf9.js",
+    "precache-manifest.35c3c1aac98a7b9d005b5c4dd8a06892.js": "/gaKoltai/photoPortfolio/precache-manifest.35c3c1aac98a7b9d005b5c4dd8a06892.js",
     "service-worker.js": "/gaKoltai/photoPortfolio/service-worker.js",
     "static/css/main.2fd7e077.chunk.css.map": "/gaKoltai/photoPortfolio/static/css/main.2fd7e077.chunk.css.map",
     "static/js/2.b2619122.chunk.js.LICENSE.txt": "/gaKoltai/photoPortfolio/static/js/2.b2619122.chunk.js.LICENSE.txt",
@@ -41,6 +41,6 @@
     "static/js/runtime-main.2ca1de94.js",
     "static/js/2.b2619122.chunk.js",
     "static/css/main.2fd7e077.chunk.css",
-    "static/js/main.85de25e1.chunk.js"
+    "static/js/main.ee9e9745.chunk.js"
   ]
 }
