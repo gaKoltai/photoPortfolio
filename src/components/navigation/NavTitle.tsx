@@ -11,7 +11,7 @@ const StyledNavTitle = styled.h1`
 interface Props {}
 
 const NavTitle = (props: Props) => {
-    return <StyledNavTitle>Van Coc</StyledNavTitle>;
+    return <StyledNavTitle>Title</StyledNavTitle>;
 };
 
 export default NavTitle;
